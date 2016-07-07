@@ -9,9 +9,9 @@ import com.moliying.androidlifehelper.base.BaseActivity;
 import com.moliying.androidlifehelper.guide.ViewPagerActivity;
 import com.moliying.androidlifehelper.utils.SharedXmlUtil;
 
-public class SpalshActivity extends BaseActivity {
-
-    private static final String FIRST_RUN_APP = "firstapp";
+public class SplashActivity extends BaseActivity {
+    private final int SPLASH_START_TIME = 2000;
+    private final String FIRST_RUN_APP = "firstapp";
     private SharedXmlUtil mSharedXmlUtil;
 
     @Override
@@ -26,13 +26,13 @@ public class SpalshActivity extends BaseActivity {
             public void run() {
                 if (first){
                     mSharedXmlUtil.write(FIRST_RUN_APP,false);
-                    startActivity(new Intent(SpalshActivity.this, ViewPagerActivity.class));
-                    SpalshActivity.this.finish();
+                    startActivity(new Intent(SplashActivity.this, ViewPagerActivity.class));
+                    SplashActivity.this.finish();
                 }else {
-                    startActivity(new Intent(SpalshActivity.this,LoginActivity.class));
-                    SpalshActivity.this.finish();
+                    startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                    SplashActivity.this.finish();
                 }
             }
-        },2000);
+        },SPLASH_START_TIME);
     }
 }

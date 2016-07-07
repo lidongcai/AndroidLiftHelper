@@ -14,7 +14,7 @@
         <activity
             android:name=".activity.MainActivity"
             android:launchMode="singleInstance" />
-        <activity android:name=".activity.SpalshActivity">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

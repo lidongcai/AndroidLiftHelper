@@ -5,15 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".guide.ViewPagerActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/guide01"
-        />
     <android.support.v4.view.ViewPager
         android:id="@+id/first_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/viewpager_tag_viewgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/view_pager_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即体验"
+        android:layout_above="@id/viewpager_tag_viewgroup"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
 </RelativeLayout>
