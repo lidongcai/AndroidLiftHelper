@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.moliying.androidlifehelper.activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="磨砺营IT教育"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="#00c17c"
+        />
+
+    <com.moliying.androidlifehelper.view.MyLineEditText
+        android:id="@+id/username_login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入用户名"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edittext_cursor" />
+    <com.moliying.androidlifehelper.view.MyLineEditText
+        android:id="@+id/password_login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入密码"
+        android:background="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:password="true"
+        android:textCursorDrawable="@drawable/edittext_cursor" />
+
+    <Button
+        android:id="@+id/submit_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:padding="5dp"
+        android:background="@drawable/login_btn_selector"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:id="@+id/regist_login_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:visibility="visible"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
