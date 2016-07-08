@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">AndroidLifeHelper</string>
+
+    <!-- 首页gridview的文本-->
+    <string name="gridview_jizhang">记账单</string>
+    <string name="gridview_chaxun">查询账单</string>
+    <string name="gridview_dushuhui">读书会</string>
+    <string name="gridview_cunkuan">存款</string>
+    <string name="gridview_xiangqing">消费详情</string>
+    <string name="gridview_xinxi">个人信息</string>
 </resources>

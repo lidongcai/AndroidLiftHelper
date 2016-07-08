@@ -53,7 +53,7 @@ public class ViewPagerActivity extends BaseActivity implements ViewPager.OnPageC
         for (int i = 0;i<mViewList.size();i++){
             mImageView = new ImageView(this);
             mImageView.setLayoutParams(new ViewGroup.LayoutParams(20,20));
-            mImageView.setPadding(20,0,20,0);
+            mImageView.setPadding(30,0,30,0);
             mImageViewArray[i] = mImageView;
             if (i == 0){
                 mImageView.setBackgroundResource(R.mipmap.viewpager_tag_on);

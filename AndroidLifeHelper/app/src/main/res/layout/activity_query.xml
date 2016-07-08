@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context="com.moliying.androidlifehelper.activity.QueryActivity">
 
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="理财通首页"
+        android:text="查询"
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:textSize="30sp"
@@ -18,14 +18,4 @@
         android:paddingTop="5dp"
         android:background="#3D98D1"
         />
-
-    <GridView
-        android:id="@+id/main_home_gridview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="3"
-        android:gravity="center"
-        android:layout_below="@id/textview"
-        >
-    </GridView>
 </RelativeLayout>
