@@ -7,8 +7,13 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.moliying.androidlifehelper.R;
+import com.moliying.androidlifehelper.bean.AccountModelBean;
 import com.moliying.androidlifehelper.consts.ConstKey;
+import com.moliying.androidlifehelper.model.AccountModelDao;
 import com.moliying.androidlifehelper.utils.SharedXmlUtil;
+import com.moliying.androidlifehelper.utils.ToastUtil;
+
+import org.xutils.ex.DbException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -43,7 +48,21 @@ public class AccountActivity extends AppCompatActivity implements View.OnClickLi
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String time = sdf.format(date);
 
+        AccountModelBean modelBean = new AccountModelBean();
+            modelBean.setUsername(userName);
+            modelBean.setTime(time);
+            modelBean.setProjectname(projectName);
+            modelBean.setMoney(money);
 
+        try {
+            AccountModelDao.saveAccount(modelBean);
+        } catch (DbException e) {
+            e.printStackTrace();
+        }
+
+        ToastUtil.shortShow(this,"保存成功");
+        mNameEditText.setText("");
+        mMoneyEditText.setText("");
 
     }
 }

@@ -9,7 +9,7 @@
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="理财通首页"
+        android:text="磨砺营教育记账软件"
         android:textStyle="bold"
         android:textColor="#ffffff"
         android:textSize="30sp"
